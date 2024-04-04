@@ -27,7 +27,7 @@ Proyecto original(1920px)
 - [_] Se aplicará un ::before al titulo para obtener la línea como muestra en el diseño.
 - [_] El footer ya esta diseño para se acople automaticamente a pantallas mas grandes.
 
-### MEJORAS U OPCIONALES
+### OPCIONALES
 - [_] Añadir opcion para un modo obscuro.
 
 
