@@ -1,5 +1,5 @@
 # Coworking Space
-- Este proyecto de encabezado para una pagina web fue diseñado inicialmente para pantallas de escritorio, sin embargo es conveniente iniciar el proyecto acoplando el diseño a pantallas móviles y esta es la primera versión del proyecto llevada a una pantalla móvil.
+- Este proyecto de Header para una pagina web diseñada inicialmente para pantallas de escritorio, sin embargo es conveniente iniciar el proyecto acoplando el diseño a pantallas móviles. Esta es la primera versión del proyecto llevada a una pantalla móvil.
 
 ![alt text](header03.jpg)
 Proyecto original(1920px)
