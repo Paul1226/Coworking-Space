@@ -32,6 +32,7 @@ Proyecto original(1920px)
 ![alt text](header03-desktop.png)
 
 ### OPCIONALES
+- [✔] Añadir favicon a la página relacionado a la pagina web
 - [_] Añadir opción para un modo obscuro.
 - [_] Crear páginas para cada elemento del NAV.
 - [_] Crear un sign in (simulador).
