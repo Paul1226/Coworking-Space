@@ -16,9 +16,11 @@ Proyecto original(1920px)
 
 ### Diseño TABLET
 - [✔] El nav oculto aun permacerá.
-- [_] La imagen "hero" deberá ocupar todo el ancho de la pantalla y el contenido del hero tendra una bur de fondo y se situará al lado derecho de la pantalla.
-- [_] Acoplar todos los titulos  y parrafos ya muy parecido al diseño original.
-- [_] El footer ya esta diseño para se acople automaticamente a pantallas mas grandes.
+- [✔] La imagen "hero" deberá ocupar todo el ancho de la pantalla y el contenido del hero tendra una bur de fondo y se situará al lado derecho de la pantalla.
+- [✔] Acoplar todos los titulos  y parrafos ya muy parecido al diseño original.
+- [✔] El footer ya esta diseño para se acople automaticamente a pantallas mas grandes.
+
+![alt text](header03-tablet.png)
 
 ### Diseño DESKTOP
 - [_] El nav ya no sera oculto y se colocará como en el diseño original.
