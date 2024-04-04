@@ -4,11 +4,14 @@ import HeroContent from "../components/HeroContent.astro"
 import Check from "../icons/Check.astro"
 ---
 
-<section class="grid gap-4">
+<section class="content grid gap-4 lg:grid-cols-2 lg:w-10/12 lg:mx-auto lg:mt-3 lg:items-center relative">
     <Decorative />
     <HeroContent />
-    <section class="w-10/12 mx-auto bg-white md:pl-6 md:py-8">
-        <ul class=" w-full grid grid-cols-2 gap-4 text-xs">
+    <section class="alternatives w-10/12 mx-auto bg-white
+    md:pl-6 md:py-8 md:rounded-t-lg
+    lg:w-full lg:mx-0 lg:py-0 lg:rounded-none
+    xl:w-max xl:absolute xl:bottom-0 xl:right-0">
+        <ul class=" w-full grid grid-cols-2 gap-4 text-xs lg:text-base">
             <li class="flex gap-1 items-center"><Check class="fill-primary w-4"/>Virtual Office Setup</li>
             <li class="flex gap-1 items-center"><Check class="fill-primary w-4"/>Space for Event</li>
             <li class="flex gap-1 items-center"><Check class="fill-primary w-4"/>Open Workspace</li>
@@ -16,3 +19,17 @@ import Check from "../icons/Check.astro"
         </ul>
     </section>
 </section>
+
+<style>
+
+    @media screen and (min-width: 1024px) {
+        
+        .content{
+            grid-template-areas: 'dev text' '. content';
+            
+            .alternatives{
+                grid-area: content;
+            }
+        }
+    }
+</style>

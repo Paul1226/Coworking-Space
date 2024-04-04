@@ -1,4 +1,27 @@
-<section class="py-6 flex flex-col gap-6 w-10/12 mx-auto md:bg-white/40 md:backdrop-blur-sm md:w-1/2 md:mx-0 md:ml-auto md:p-6 md:mt-[12.5%]">
-    <h1 class="text-4xl font-playfair font-bold text-balance">Find your comfort working zone with Cozy Corner</h1>
-    <p class="text-tertiary text-pretty md:text-black md:font-medium">Change your work environment by using a co-working place, to meet new people and gain a new network</p>
+<section class="py-6 flex flex-col gap-6 w-10/12 mx-auto 
+md:bg-white/60 md:backdrop-blur-sm md:w-1/2 md:mx-0 md:ml-auto md:p-6 md:mt-[12.5%]
+lg:w-full lg:mt-0">
+    <h1 class="text-3xl font-playfair font-bold text-balance text-secondary md:text-4xl xl:w-[75%] ">Find your comfort working zone with Cozy Corner</h1>
+    <p class="text-tertiary text-pretty md:text-black md:font-medium lg:text-tertiary">Change your work environment by using a co-working place, to meet new people and gain a new network</p>
 </section>
+
+<style>
+    @media (min-width: 1024px) {
+        h1::after{
+            content: '';
+            width: 40px;
+            height: 4px;
+            @apply bg-primary;
+            display: block;
+            position: absolute;
+            top: 45px;
+            right: 10%;
+        }
+    }
+    @media (min-width: 1280px) {
+        h1::after{
+            top: 45px;
+            right: 20%;
+        }
+    }
+</style>

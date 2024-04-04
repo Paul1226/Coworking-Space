@@ -15,7 +15,7 @@ export default {
 			},
 			gridTemplateColumns:{
 				'2mobile': 'max-content max-content',
-				'3p': 'repeat(auto-fill, minmax(250px,1fr))',
+				'3p': 'repeat(auto-fit, minmax(250px,1fr))',
 			}
 		},
 	},
