@@ -20,12 +20,15 @@ Proyecto original(1920px)
 - [_] Acoplar todos los titulos  y parrafos ya muy parecido al diseño original.
 - [_] El footer ya esta diseño para se acople automaticamente a pantallas mas grandes.
 
-### Diseño TABLET
+### Diseño DESKTOP
 - [_] El nav ya no sera oculto y se colocará como en el diseño original.
 - [_] La imagen "hero" deberá ocupar la mitad del ancho de la pantalla y el contenido del hero tendra una bur de fondo y se situará al lado derecho de la pantalla como el diseño original.
 - [_] Acoplar todos los titulos  y parrafos ya muy parecido al diseño original.
 - [_] Se aplicará un ::before al titulo para obtener la línea como muestra en el diseño.
 - [_] El footer ya esta diseño para se acople automaticamente a pantallas mas grandes.
+
+### OPCIONALES
+- [_] Añadir opcion para un modo obscuro.
 
 
 ### Skills
