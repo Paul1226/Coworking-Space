@@ -1,0 +1,25 @@
+---
+import Location from "../icons/Location.astro"
+import Rooms from "../icons/Rooms.astro"
+import Wifi from "../icons/Wifi.astro"
+---
+
+<footer class="w-10/12 mx-auto">
+    <section class="w-full grid grid-cols-3p justify-center gap-4 my-5">
+        <article class="bg-white/50 backdrop-blur-lg hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out rounded-lg p-5 flex flex-col gap-2">
+            <Location class="w-[70px]"/>
+            <h3 class="text-xl font-semibold">20+ Location</h3>
+            <p class="text-tertiary text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="bg-white/50 backdrop-blur-lg hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out rounded-lg p-5 flex flex-col gap-2">
+            <Rooms class="w-[60px]"/>
+            <h3 class="text-xl font-semibold">324 Rooms Available</h3>
+            <p class="text-tertiary text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="bg-white/50 backdrop-blur-lg hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out rounded-lg p-5 flex flex-col gap-2">
+            <Wifi class="w-[70px]"/>
+            <h3 class="text-xl font-semibold">100% Internet Connected</h3>
+            <p class="text-tertiary text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </article>
+    </section>
+</footer>
