@@ -37,6 +37,7 @@ Proyecto original(1920px)
 - [_] Crear páginas para cada elemento del NAV.
 - [_] Crear un sign in (simulador).
 - [_] Ejercicio de sign up para registrarse(simulador).
+- [_] Animaciones de página.
 
 
 ### Skills
