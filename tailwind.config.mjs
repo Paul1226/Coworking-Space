@@ -1,13 +1,25 @@
+import animations from '@midudev/tailwind-animations';
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
 			colors:{
-				primary: '#9B9A78',
-				secondary: '#313131',
-				tertiary: '#909090',
-				quaternary: '#7290A0',
+				gurkha: {
+					'50': '#f5f5f0',
+					'100': '#e8e7df',
+					'200': '#d4d3c2',
+					'300': '#b9b89d',
+					'400': '#9b9a78',
+					'500': '#828160',
+					'600': '#65664a',
+					'700': '#50503b',
+					'800': '#424232',
+					'900': '#393a2d',
+					'950': '#1d1d16',
+				},
+				
 			},
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
@@ -19,5 +31,5 @@ export default {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [animations],
 }
