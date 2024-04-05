@@ -1,0 +1,45 @@
+---
+import Desk from "../../icons/iconsAbout/Desk.astro"
+import DeskAll from "../../icons/iconsAbout/DeskAll.astro"
+import Chair from "../../icons/iconsAbout/Chair.astro"
+import ChairAll from "../../icons/iconsAbout/ChairAll.astro"
+import Coffe from "../../icons/iconsAbout/Coffe.astro"
+import CoffeAll from "../../icons/iconsAbout/CoffeAll.astro"
+import Meetings from "../../icons/iconsAbout/Meetings.astro"
+import MeetingsAll from "../../icons/iconsAbout/MeetingsAll.astro"
+import Recreation from "../../icons/iconsAbout/Recreation.astro"
+import RecreationAll from "../../icons/iconsAbout/RecreationAll.astro"
+import Light from "../../icons/iconsAbout/Light.astro"
+import LightAll from "../../icons/iconsAbout/LightAll.astro"
+import WifiAbout from "../../icons/iconsAbout/WifiAbout.astro"
+import WifiAboutAll from "../../icons/iconsAbout/WifiAboutAll.astro"
+---
+
+<figure class="w-full">
+    <img class="aspect-[16/9] w-full" src="public/aboutImages/heroAbout.webp" alt="Imagen principal del hero">
+</figure>
+<section class="w-10/12 mx-auto">
+    <div class="w-full py-4 flex flex-col gap-4">
+        <h1 class="text-3xl font-bold font-playfair text-balance">Sobre Nosotros</h1>
+        <p class="text-pretty text-tertiary">En <strong class="text-secondary">Cozy Corner</strong>, entendemos la importancia de tener un espacio de trabajo agradable y productivo. Nuestra misión es proporcionar entornos de trabajo cómodos, inspiradores y funcionales para profesionales, emprendedores y equipos que buscan alejarse del ajetreo y distracciones de la oficina tradicional.</p>
+
+        <h3 class="text-xl font-bold font-playfair text-balance">Nuestros Espacios de Trabajo</h3>
+        <p class="text-pretty">Nuestras zonas de trabajo han sido diseñadas cuidadosamente con todas las comodidades necesarias para que puedas concentrarte y rendir al máximo. Contamos con:</p>
+        <ul class="grid gap-2">
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Desk class="w-7 fill-primary group-hover:hidden"/><DeskAll class="hidden group-hover:block w-7 fill-primary"/>Escritorios amplios y ergonómicos</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Chair class="w-7 fill-primary group-hover:hidden"/><ChairAll class="hidden group-hover:block w-7 fill-primary"/>Sillas cómodas y ajustables</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Light class="w-7 fill-primary group-hover:hidden"/><LightAll class="hidden group-hover:block w-7 fill-primary"/>Iluminación natural y artificial óptima</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><WifiAbout class="w-7 fill-primary group-hover:hidden"/><WifiAboutAll class="hidden group-hover:block w-7 fill-primary"/>Conexión WiFi de alta velocidad</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Meetings class="w-7 fill-primary group-hover:hidden" /><MeetingsAll class="hidden group-hover:block w-7 fill-primary"/>Salas de reuniones privadas</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Recreation class="w-7 fill-primary group-hover:hidden"/><RecreationAll class="hidden group-hover:block w-7 fill-primary"/>Áreas de descanso y recreación</li>
+            <li class="text-tertiary flex gap-2 p-4 rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 group"><Coffe class="w-7 fill-primary group-hover:hidden"/><CoffeAll class="hidden group-hover:block w-7 fill-primary"/>Servicio de cafetería y snacks</li>
+        </ul>
+
+        <h3 class="text-xl font-bold font-playfair text-balance">Nuestra Filosofía</h3>
+        <p class="text-pretty">Creemos que un entorno de trabajo inspirador y libre de distracciones puede marcar una gran diferencia en la productividad y la satisfacción laboral. Es por eso que nos esforzamos por crear espacios que fomenten la concentración, la creatividad y el bienestar.</p>
+        <p class="text-pretty">Nuestro equipo está comprometido en brindar un servicio excepcional y hacer que tu experiencia de trabajo sea lo más placentera y eficiente posible.</p>
+        <h3 class="text-xl font-bold font-playfair text-balance">Únete a Nuestra Comunidad</h3>
+        <p class="text-pretty">Ya sea que trabajes de forma independiente, como freelancer o con un equipo, te invitamos a formar parte de nuestra comunidad de profesionales. Descubre un nuevo enfoque del trabajo y disfruta de todas las comodidades que ofrecemos.</p>
+        <a class="block w-full text-center p-2 py-4 rounded-lg text-white bg-primary hover:bg-primary/70 transition-all duration-200 hover:scale-105 lg:w-max lg:py-2 lg:px-4" href="#"> Unirse a la comunidad</a>
+    </div>
+</section>
