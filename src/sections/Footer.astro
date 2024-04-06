@@ -2,53 +2,25 @@
 import Location from "../icons/Location.astro"
 import Rooms from "../icons/Rooms.astro"
 import Wifi from "../icons/Wifi.astro"
+import CardsFooter from "../components/CardsFooter.astro"
 ---
 
 <footer class="w-10/12 mx-auto pb-10">
     <section class="w-full grid grid-cols-3p justify-center gap-4 my-5">
-        <article class="article bg-white/50 backdrop-blur-lg hover:shadow-lg rounded-lg p-5 flex flex-col gap-2 md:hover:scale-105">
-            <Location class="w-[70px]"/>
-            <h3 class="text-xl font-semibold text-gurkha-950">20+ Location</h3>
-            <p class="text-gurkha-950/60 text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </article>
-        <article class="article bg-white/50 backdrop-blur-lg hover:shadow-lg rounded-lg p-5 flex flex-col gap-2 md:hover:scale-105">
-            <Rooms class="w-[51px]"/>
-            <h3 class="text-xl font-semibold text-gurkha-950">324 Rooms Available</h3>
-            <p class="text-gurkha-950/60 text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </article>
-        <article class="article bg-white/50 backdrop-blur-lg hover:shadow-lg rounded-lg p-5 flex flex-col gap-2 md:hover:scale-105">
-            <Wifi class="w-[70px]"/>
-            <h3 class="text-xl font-semibold text-gurkha-950">100% Internet Connected</h3>
-            <p class="text-gurkha-950/60 text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </article>
+        <CardsFooter 
+        cardTitle="20+ Location"
+        cardText="lorem ipsum dolor sit amet consectetur adipisicing elit">
+            <Location class="w-[68px]"/>
+        </CardsFooter>
+        <CardsFooter 
+        cardTitle="324 Rooms Available"
+        cardText="lorem ipsum dolor sit amet consectetur adipisicing elit">
+            <Rooms class="w-[50px]"/>
+        </CardsFooter>
+        <CardsFooter 
+        cardTitle="100% Internet Connected"
+        cardText="lorem ipsum dolor sit amet consectetur adipisicing elit">
+            <Wifi class="w-[60px]"/>
+        </CardsFooter>
     </section>
 </footer>
-
-<style>
-    article.article{
-        animation: go-up linear both;
-        animation-timeline: view();
-        animation-range: entry 10% cover 40%;
-        transition: all .3s ease-in-out;
-
-    }
-
-    @keyframes go-up {
-        0%{
-            opacity: 0;
-            transform: translateY(40px);
-            scale: 0.7;
-        }
-        50%{
-            opacity: 1;
-            transform: translateY(0);
-            scale: 1;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        article.article{
-            animation: none;
-        }
-    }
-</style>
