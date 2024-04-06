@@ -33,7 +33,7 @@ Proyecto original(1920px)
 
 ### OPCIONALES
 - [✔] Añadir favicon a la página relacionado a la pagina web
-- [_] Añadir opción para un modo obscuro.
+- [✔] Añadir opción para un modo obscuro.
 - [_] Crear páginas para cada elemento del NAV.
     - [✔] About page.
     - [_] Featured page.
