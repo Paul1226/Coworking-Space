@@ -36,6 +36,9 @@ Proyecto original(1920px)
 - [_] Añadir opción para un modo obscuro.
 - [_] Crear páginas para cada elemento del NAV.
     - [✔] About page.
+    - [_] Featured page.
+    - [_] Blog page.
+    - [_] More page.
 - [_] Crear un sign in (simulador).
 - [_] Ejercicio de sign up para registrarse(simulador).
 - [_] Animaciones de página.
