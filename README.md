@@ -35,6 +35,7 @@ Proyecto original(1920px)
 - [✔] Añadir favicon a la página relacionado a la pagina web
 - [_] Añadir opción para un modo obscuro.
 - [_] Crear páginas para cada elemento del NAV.
+    - [✔] About page.
 - [_] Crear un sign in (simulador).
 - [_] Ejercicio de sign up para registrarse(simulador).
 - [_] Animaciones de página.
