@@ -16,7 +16,7 @@ import '@fontsource-variable/playfair-display';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -25,7 +25,7 @@ import '@fontsource-variable/playfair-display';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="relative max-w-[1366px] mx-auto">
+	<body class="relative max-w-[1366px] mx-auto dark:bg-slate-900 dark:text-white">
 		<slot />
 	</body>
 </html>
@@ -36,5 +36,10 @@ import '@fontsource-variable/playfair-display';
 		box-sizing: border-box;
 		font-family: 'Poppins', sans-serif;
 		@apply text-gurkha-950;
+	}
+
+	html.dark{
+		scroll-behavior: smooth;
+  		transition: all, 0.7s ease;
 	}
 </style>
