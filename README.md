@@ -12,7 +12,7 @@ Proyecto original(1920px)
 - [_] Incorporar una barra de busqueda que aparecerá al darle a al icono.
 - [✔] Añadir iconos svg a cada elemento de la lista que se relacione con el contenido.
 
-![alt text](header03-mobile.png)
+![header03-mobile](https://github.com/Paul1226/Coworking-Space/assets/155583856/5172dfe4-f15a-4f6d-8212-a2b0e91a96cd)
 
 ### Diseño TABLET
 - [✔] El nav oculto aun permacerá.
