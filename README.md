@@ -10,7 +10,7 @@ Proyecto original(1920px)
 - [✔] Se incorporarán iconos de menú y cierre de menú.
 - [✔] Ajustar el nav en una posicion absoluta que aparecerá al darle click al menu.
 - [_] Incorporar una barra de busqueda que aparecerá al darle a al icono.
-- [_] Añadir iconos svg a cada elemento de la lista que se relacione con el contenido.
+- [✔] Añadir iconos svg a cada elemento de la lista que se relacione con el contenido.
 
 ![alt text](header03-mobile.png)
 
