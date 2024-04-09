@@ -5,9 +5,8 @@ const {cardTitle, cardText} = Astro.props
 <article 
 class="article w-full rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 ease-in-out dark:hover:bg-gurkha-500/50 dark:[mask-image:linear-gradient(to_bottom_right,black_50%,transparent)]"
 style="
-animation: goUp both; 
-animation-timeline: view(); 
-animation-range: entry 10% cover 40%;"
+
+"
 >
     <div 
     class="w-full p-5 flex flex-col gap-2 hover:scale-105 transition-scale duration-300">
@@ -24,6 +23,11 @@ animation-range: entry 10% cover 40%;"
 
 <style>
     /* animaicon de cards */
+    .article{
+        animation: goUp both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 40%;
+    }
     @keyframes goUp {
         0%{
             opacity: 0;
@@ -34,6 +38,12 @@ animation-range: entry 10% cover 40%;"
             opacity: 1;
             transform: translateY(0);
             scale: 1;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .article{
+            animation: none;
         }
     }
 </style>

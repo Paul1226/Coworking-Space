@@ -5,6 +5,8 @@ import Cross from "../icons/Cross.astro";
 import Search from "../icons/Search.astro";
 
 import SvgAll from "../components/SvgAll.astro";
+import Sun from "../icons/Sun.astro";
+import Moon from "../icons/Moon.astro";
 ---
 
 <header class="w-10/12 mx-auto py-4">
@@ -63,7 +65,7 @@ import SvgAll from "../components/SvgAll.astro";
           class="flex flex-col items-center justify-center gap-3 lg:flex-row lg:text-sm"
         >
           <li class="">
-            <Search class="fill-gurkha-950 w-6" />
+            <Search class="fill-gurkha-950 w-6 dark:fill-white" />
           </li>
           <li class="w-full lg:w-max">
             <a
@@ -77,15 +79,16 @@ import SvgAll from "../components/SvgAll.astro";
           </li>
         </ul>
       </aside>
-      <div 
-      class="toggle-border border-2 border-solid border-[#foebeb] rounded-[130px] mb-10 px-[1px] py-[2px] bg-gradient-to-br from-[#F0F0F0] to-[#F0F0F050] shadow-[0_0_0_2px] shadow-white cursor-pointer flex items-center">
-        <input id="one" type="checkbox" class="">
-
-        <label for="one" class="relative inline-block w-16 h-5 bg-[#d13613] rounded-[80px] cursor-pointer shadow-[inset_0_0_16px] shadow-white/30 transition-colors duration-500">
-
-          <div class="handle absolute top-[-8px] left-[-10px] w-9 h-9 border-[1px] border-solid border-[#e5e5e5] rounded-full shadow-[3px_5px_10px_0] shadow-white/40 transition-all duration-500"></div>
-        </label>
-      </div>
+      <button class="bg-[#343d5b] w-[60px] h-full p-2 rounded-3xl relative cursor-pointer flex justify-between items-center btn__switch">
+        <span 
+        class="block leading-7">
+          <Sun class="fill-white bg-slate- w-4"/>
+        </span>
+        <span 
+        class="block leading-7">
+          <Moon class="fill-white bg-slate- w-4"/>
+        </span>
+      </button>
     </div>
   </div>
 </header>
@@ -118,27 +121,53 @@ import SvgAll from "../components/SvgAll.astro";
   }
 
   /* checkbox */
-  .toggle-border input[type="checkbox"] {
-    display: none;
-  }
-  .handle{
-    background: repeating-radial-gradient(circle at 50% 50%, rgba(200,200,200,.2) 0%, rgba(200,200,200,.2) 2%, transparent 2%, transparent 3%, rgba(200,200,200,.2) 3%, transparent 3%), conic-gradient(white 0%, silver 10%, white 35%, silver 45%, white 60%, silver 70%, white 80%, silver 95%, white 100%);
-  }
 
-  .toggle-border input[type="checkbox"]:checked + label {
-    background: #13d162;
+  .btn__switch{
+    transition: all 0.3s ease-in-out;
   }
-
-  .toggle-border input[type="checkbox"]:checked + label > .handle {
-    left: calc(100% - 35px + 10px);
+  .btn__switch::after{
+    transition-duration: .3s;
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    background: conic-gradient(rgb(78, 78, 78),#f8f8f8,rgb(104, 104, 104),#f8f8f8,rgb(104, 104, 104));
+    @apply rounded-full shadow-[0px_5px_15px_2px] shadow-black/20;
+  }
+  .btn__switch.active{
+    @apply bg-gurkha-500;
+    &::after{
+      transform: translateX(100%);
+      transition-duration: .3s;
+    }
   }
 </style>
 
 <script>
-  const $darkMode = document.querySelector('#one')
+  const $button = document.querySelector('.btn__switch')
 
-  $darkMode?.addEventListener('click', ()=>{
+  $button?.addEventListener('click', ()=>{
     document.documentElement.classList.toggle('dark');
+    $button.classList.toggle('active')
+
+    if (document.documentElement.classList.contains('dark')){
+      localStorage.setItem('theme', 'dark')
+    } else{
+      localStorage.setItem('theme', 'light')
+    }
   })
+
+  if (localStorage.getItem('theme') === 'dark'){
+    document.documentElement.classList.add('dark')
+    $button?.classList.add('active')
+    
+  }else{
+    document.documentElement.classList.remove('dark')
+    $button?.classList.remove('active')
+  }
 
 </script>
